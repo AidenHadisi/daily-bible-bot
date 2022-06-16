@@ -1,0 +1,4 @@
+.env
+gin-bin
+twitter.exe
+Dockerfile*

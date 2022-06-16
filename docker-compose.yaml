@@ -1,0 +1,11 @@
+services:
+  biblebot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    container_name: bible-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./:/app
+    
