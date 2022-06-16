@@ -1,0 +1,8 @@
+FROM golang:1.18-alpine
+
+WORKDIR /app
+
+RUN go install -v github.com/codegangsta/gin@latest
+
+
+CMD gin -i --path ./cmd/twitter run main.go
